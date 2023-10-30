@@ -24,8 +24,12 @@
         }
         .icon {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 5px;
+            left: 5px;
+        }
+        .icon img {
+            width: 30px;
+            height: 30px;
         }
         a {
             color: yellow;
@@ -36,25 +40,23 @@
             color: white;
         }
 
-        @media (max-width: 1080px) { /* При ширина на екрана под 1080px (мобилен изглед) */
-            .icon {
-                width: 30px;
-                height: 30px;
-                top: 5px;
-                left: 5px;
+        @media (max-width: 1080px) {
+            .icon img {
+                width: 20px;
+                height: 20px;
             }
             h1 {
-                font-size: 24px;
+                font-size: 18px;
             }
             .links p {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
     <div class="icon">
-        <img src="https://cdn.iconscout.com/icon/free/png-256/free-xiaomi-282428.png" alt="Xiaomi Icon" width="50" height="50">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-xiaomi-282428.png" alt="Xiaomi Icon">
     </div>
     <h1>Xiaomi Super Live Wallpapers</h1>
     <div class="links">
