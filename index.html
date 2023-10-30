@@ -12,8 +12,8 @@
             color: yellow;
             scrollbar-color: grey transparent;
             scrollbar-width: thin;
-            margin: 0; /* Remove default margin to place the icon in the top-left corner */
-            padding: 0; /* Remove default padding */
+            margin: 0;
+            padding: 0;
         }
         h1 {
             text-align: center;
@@ -34,6 +34,19 @@
         }
         a:hover {
             color: white;
+        }
+        
+        @media (max-width: 768px) { /* При ширина на екрана под 768px (мобилен изглед) */
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .links p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
