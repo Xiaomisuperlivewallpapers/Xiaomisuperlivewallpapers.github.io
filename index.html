@@ -5,11 +5,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            color: yellow;
-            scrollbar-color: grey transparent;
-            scrollbar-width: thin;
             margin: 0;
             padding: 0;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
         h1 {
             text-align: center;
@@ -19,16 +25,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            color: yellow;
             z-index: 1;
         }
         .links {
             text-align: center;
-            margin-top: 20px;
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
         }
         .icon {
             position: absolute;
             top: 10px;
             left: 10px;
+            z-index: 1;
         }
         .icon img {
             width: 150px;
@@ -42,14 +54,6 @@
         }
         a:hover {
             color: white;
-        }
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
 
         @media (max-width: 1080px) {
